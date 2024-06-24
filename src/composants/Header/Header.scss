@@ -1,0 +1,33 @@
+
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    width: 1240px;
+    margin: 50px auto;
+
+    .nav__kasa {
+        font-size: 50px;
+    }
+
+
+    .nav__link-container {
+        display: flex;
+        gap: 57px;
+
+        a {
+            color: black;
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: none;
+        
+            &:hover, 
+            &:active, 
+            &:visited {
+                color: black; /* Couleur noire pour les états survolé, actif et visité */
+            }
+        }
+    }
+}

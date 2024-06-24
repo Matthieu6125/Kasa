@@ -1,0 +1,18 @@
+.error-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.error-wrapper .link-home {
+  font-weight: 500;
+  font-size: 18px;
+}
+.error-wrapper .error-404 {
+  font-weight: 700;
+  font-size: 288px;
+}
+.error-wrapper .error-subtitle {
+  font-weight: 500;
+  font-size: 36px;
+}/*# sourceMappingURL=Error.css.map */

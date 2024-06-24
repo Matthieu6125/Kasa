@@ -1,0 +1,92 @@
+.container-main {
+    display: flex;
+    flex-direction: column;
+    width: 1240px;
+    margin-top: 30px;
+    
+    .container-titre {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1240px;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .titre-container {
+        display: flex;
+        flex-direction: column;
+
+        .localisation {
+          font-weight: 500;
+          font-size: 18px;
+          color: black;
+          margin: 0;
+        }
+
+        .titre-logement {
+          font-weight: 500;
+          font-size: 36px;
+          color: #ff6060;
+          margin: 0;
+        }
+      }
+    
+      .name-rating-div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: 20px;
+
+        
+          .name-div {
+            display: flex;
+            align-items: center;
+          
+            .name {
+              font-weight: 500;
+              font-size: 18px;
+              text-align: right;
+            }
+          
+            .name-photo {
+              border-radius: 50%;
+              width: 64px;
+              height: 64px;
+            }
+          }
+      }
+    }
+      .container-tags {
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        width: 100%;
+      
+        .tags-div {
+          background-color: #ff6060;
+          border-radius: 10px;
+          min-width: 115px;
+          height: 25px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 10px;
+
+          .tags-texte {
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+          }
+        }
+      }
+    
+      
+      
+    .colapses {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 76px;
+      margin: 24px 0px 50px;
+    } 
+  
+}

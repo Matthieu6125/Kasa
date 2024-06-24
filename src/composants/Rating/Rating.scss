@@ -1,0 +1,13 @@
+.stars-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .star {
+    color: #ebecf0; // Couleur par défaut pour les étoiles inactives
+    margin-right: 5px;
+  
+    &.active {
+      color: #06ee2d; // Couleur dorée pour les étoiles actives
+    }
+  }

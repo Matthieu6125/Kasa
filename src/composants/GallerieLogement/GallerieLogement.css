@@ -1,0 +1,36 @@
+.gallery-container {
+  width: 1240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.image-wrapper {
+  width: 1240px;
+  height: 415px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+}
+.image-button:first-child {
+  left: 10px;
+}
+.image-button:last-child {
+  right: 10px;
+}/*# sourceMappingURL=GallerieLogement.css.map */

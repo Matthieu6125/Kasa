@@ -1,0 +1,12 @@
+.stars-container {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  color: #ebecf0;
+  margin-right: 5px;
+}
+.star.active {
+  color: #06ee2d;
+}/*# sourceMappingURL=Rating.css.map */
