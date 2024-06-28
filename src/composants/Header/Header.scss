@@ -17,7 +17,7 @@ nav {
     .nav__kasa {
         font-size: 50px;
 
-        @media (max-width: 600px) {
+        @media (max-width: 600px) { 
             font-size: 30px;
           }
     }
@@ -27,6 +27,10 @@ nav {
         display: flex;
         gap: 57px;
         justify-content: flex-end;
+
+        a.active {
+          text-decoration: underline;
+      }
 
         @media (max-width: 600px) {
             gap: 27px;

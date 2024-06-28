@@ -11,7 +11,7 @@ function InformationLogement() {
   const TitreOfId = DataForId.title;
   const TagsData = DataForId.tags;
   const RatingId = DataForId.rating;
-
+ 
   return (
     <div className="container-main">
       <div className="container-titre">

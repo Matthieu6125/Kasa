@@ -1,28 +1,40 @@
 @import '../../utils/GlobalStyle/variables';
 
 
-
+ 
 .error-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     height: 896px;
+    @media (max-width : 600px) {
+      height: 620px;
+    }
   
   .link-home {
     font-weight: 500;
     font-size: 18px;
+    @media (max-width : 600px) {
+      font-size: 14px;
+  }
   }
   
   .error-404 {
     font-weight: 700;
     font-size: 288px;
     color : $primary-color;
+    @media (max-width : 600px) {
+      font-size: 96px;
+  }
   }
   
   .error-subtitle {
     font-weight: 500;
     font-size: 36px;
     color: $primary-color;
+    @media (max-width : 600px) {
+      font-size: 18px;
+  }
   }
 }
