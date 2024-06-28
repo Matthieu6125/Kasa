@@ -21,7 +21,7 @@ const Gallery = () => {
     <div className="gallery-container">
       <button className="image-button" onClick={prevImage}>&lt;</button>
       <div className="image-wrapper">
-        <img className="image" src={Images[currentImageIndex]} alt={`Image ${currentImageIndex + 1}`} />
+        <img className="image" src={Images[currentImageIndex]} alt={`Gallerie ${currentImageIndex + 1}`} />
       </div>
       <button className="image-button" onClick={nextImage}>&gt;</button>
     </div>

@@ -1,9 +1,13 @@
+@import '../../utils/GlobalStyle/variables';
+
+
+
 .error-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-  
+    height: 896px;
   
   .link-home {
     font-weight: 500;
@@ -13,10 +17,12 @@
   .error-404 {
     font-weight: 700;
     font-size: 288px;
+    color : $primary-color;
   }
   
   .error-subtitle {
     font-weight: 500;
     font-size: 36px;
+    color: $primary-color;
   }
 }

@@ -1,4 +1,4 @@
-
+ 
 
 nav {
     display: flex;
@@ -7,15 +7,30 @@ nav {
     height: 68px;
     width: 1240px;
     margin: 50px auto;
+    box-sizing: border-box;
 
+    @media (max-width: 600px) {
+        width: 100%;
+        padding: 20px 20px 20px 27px;
+        margin: 0px;
+      }
     .nav__kasa {
         font-size: 50px;
+
+        @media (max-width: 600px) {
+            font-size: 30px;
+          }
     }
 
 
     .nav__link-container {
         display: flex;
         gap: 57px;
+        justify-content: flex-end;
+
+        @media (max-width: 600px) {
+            gap: 27px;
+          }
 
         a {
             color: black;
@@ -28,6 +43,13 @@ nav {
             &:visited {
                 color: black; /* Couleur noire pour les états survolé, actif et visité */
             }
+
+            @media (max-width: 600px) {
+                font-size: 12px;
+                justify-content: flex-end;
+              }
         }
     }
+
+    
 }
