@@ -1,13 +1,16 @@
 import React from "react"
-import HomeBandeau from "../../composants/TitreHomePage"
+import Banner from "../../composants/Banner"
 import FicheLogement from "../../composants/CardLogements"
+import Title from "../../composants/title"
+import BandeauTitre from '../../assets/images/FondTitreHome/BandeauTitre.png';
 
 function Home() {
     return (
         <main>
-            <HomeBandeau /><FicheLogement />
+            <Banner title={<Title />} imageSrc={BandeauTitre} />
+            <FicheLogement />
         </main>
     )
   }
 
-  export default Home
+  export default Home 

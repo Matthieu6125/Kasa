@@ -15,10 +15,11 @@
   .link-home {
     font-weight: 500;
     font-size: 18px;
+    text-decoration: underline;
     @media (max-width : 600px) {
       font-size: 14px;
   }
-  }
+  } 
   
   .error-404 {
     font-weight: 700;
@@ -35,6 +36,8 @@
     color: $primary-color;
     @media (max-width : 600px) {
       font-size: 18px;
+      margin: 0px 57.5px;
+      text-align: center;
   }
   }
 }

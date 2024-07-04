@@ -1,12 +1,13 @@
 import React from "react"
-import AproposBandeau from "../../composants/AproposBanner"
 import './Apropos.scss'
 import Colapse from "../../composants/Colapses"
+import Banner from "../../composants/Banner"
+import BannerApropos from '../../assets/images/ImageBannerApropos/BannerApropos.png'
 
 function Apropos() {
     return (
          <main>
-            <AproposBandeau />
+            <Banner imageSrc={BannerApropos} />
             <div className="ContainerColapse">
                 <Colapse header="Fiabilité" content="Les annonces postées su Kasa garantissent une fiabilité totale. les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes." />
                 <Colapse header="Respect" content="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainera une exclusion de notre plateforme." />

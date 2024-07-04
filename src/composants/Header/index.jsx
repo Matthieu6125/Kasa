@@ -9,7 +9,7 @@ function Header() {
     <nav>
         <KasaLogo />
         <div className="nav__link-container">
-        <Link to={`/`} className={location.pathname === '/' ? 'active' : ''}>Acceuil</Link>
+        <Link to={`/`} className={location.pathname === '/' ? 'active' : ''}>Accueil</Link>
         <Link to={`/pages/Apropos`} className={location.pathname === '/pages/Apropos' ? 'active' : ''}>A propos</Link>
         </div>
     </nav>

@@ -14,7 +14,7 @@ const Colapse = ({ header, content }) => {
     <div className="colapse-container">
       <div className="colapse-header" onClick={ChangeAffichage}>
         <span>{header}</span>
-        <FontAwesomeIcon icon={isVisible ? faChevronUp : faChevronDown} />
+        <FontAwesomeIcon icon={isVisible ? faChevronDown : faChevronUp } />
       </div>
       <div className={`colapse-text ${isVisible ? 'visible' : 'hidden'}`}>
         {Array.isArray(content) ? (

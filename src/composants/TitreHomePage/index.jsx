@@ -20,4 +20,4 @@ function HomeBandeau() {
     );
 }
 
-export default HomeBandeau; 
+export default HomeBandeau;

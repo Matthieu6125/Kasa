@@ -15,30 +15,25 @@ function InformationLogement() {
   return (
     <div className="container-main">
       <div className="container-titre">
-  <div className="item1">
-    <h1 className="titre-logement">{TitreOfId}</h1>
-    <p className="localisation">{DataForId.location}</p>
-  </div>
-
-  <div className="item2">
-    <div className="name-div">
-      <p className="name">{DataForId.host.name}</p>
-      <img className="name-photo" src={DataForId.host.picture} alt={`Votre hôte`} />
-    </div>
-  </div>
-
-  <div className="item3">
-    <div className="container-tags">
-      {TagsData.map((Tag, index) => (
-        <div className="tags-div" key={index}>
-          <p className="tags-texte">{Tag}</p>
+        <div className="titre-tags">
+          <h1 className="titre-logement">{TitreOfId}</h1>
+          <p className="localisation">{DataForId.location}</p>
+          <div className="container-tags">
+            {TagsData.map((Tag, index) => (
+              <div className="tags-div" key={index}>
+                <p className="tags-texte">{Tag}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-  </div>
-  <div className="item4">
-  <Rating rating={RatingId} />
-  </div>
+
+        <div className="name-rating">
+          <div className="name-div">
+            <p className="name">{DataForId.host.name}</p>
+            <img className="name-photo" src={DataForId.host.picture} alt={`Votre hôte`} />
+          </div>
+          <Rating rating={RatingId} />
+        </div>
 </div>
       <div className="colapses">
         <Colapse content={DataForId.description} header="Description" />
