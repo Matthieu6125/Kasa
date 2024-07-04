@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Error.scss';
-import useWindowWidth from '../TitreHomePage/HookTaillePage'
+import useWindowWidth from '../../utils/Hooks/HookTaillePage'
 
 function Error() {
 

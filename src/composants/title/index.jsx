@@ -1,5 +1,5 @@
 import './title.scss'
-import useWindowWidth from '../TitreHomePage/HookTaillePage'
+import useWindowWidth from '../../utils/Hooks/HookTaillePage'
 
 const Title = () => {
 
