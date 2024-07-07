@@ -13,13 +13,13 @@ import './utils/GlobalStyle/_globals.scss'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router basename="Kasa">
+    <Router basename="Home">
         <Header /> 
             <Routes>          
-              <Route path="/" element={<Home />} />
+              <Route path="/Home" element={<Home />} />
               <Route path="*" element={<Error />} />  
-              <Route path="/pages/FicheLogement/:id" element={<FicheLogement />}  /> 
-              <Route path="/pages/Apropos" element={<Apropos />}    />
+              <Route path="/FicheLogement/:id" element={<FicheLogement />}  /> 
+              <Route path="/Apropos" element={<Apropos />}    />
             </Routes>
         <Footer />
     </Router>
