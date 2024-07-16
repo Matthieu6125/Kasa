@@ -7,12 +7,11 @@ import Error from '../Error';
 const Gallery = () => {
   const { id } = useParams();
   const DataForId = ListeLogements.find(item => item.id === id);
+  const Images = DataForId.pictures;
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
   if (!DataForId) {
     return null;
   }
-  const Images = DataForId.pictures;
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
   const nextImage = () => {
     setCurrentImageIndex((nextIndex) => (nextIndex === Images.length - 1 ? 0 : nextIndex + 1));
   };
