@@ -6,7 +6,7 @@ const Banner = ({ title, imageSrc }) => {
     return (
       <div className="banner-container">
         <img className="banner-image" src={imageSrc} alt={title} />
-        <h1 className="banner-title">{title}</h1>
+        <div className="banner-title">{title}</div>
       </div>
     );
   };
