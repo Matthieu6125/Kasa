@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import ListeLogements from '../../Data/ListeLogements.json';
 import { useParams } from 'react-router-dom';
 import './GallerieLogement.scss';
+import Error from '../Error';
 
 const Gallery = () => {
   const { id } = useParams();
   const DataForId = ListeLogements.find(item => item.id === id);
+  if (!DataForId) {
+    return null;
+  }
   const Images = DataForId.pictures;
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 

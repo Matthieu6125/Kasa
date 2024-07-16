@@ -4,10 +4,16 @@ import ListeLogements from '../../Data/ListeLogements.json';
 import Rating from '../Rating';
 import Colapse from '../Colapses';
 import './InformationLogement.scss';
+import Error from '../Error';
  
 function InformationLogement() {
   const { id } = useParams();
   const DataForId = ListeLogements.find(item => item.id === id);
+
+  if (!DataForId) {
+    return (<Error />); 
+  }
+
   const TitreOfId = DataForId.title;
   const TagsData = DataForId.tags;
   const RatingId = DataForId.rating;
