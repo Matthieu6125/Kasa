@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import ListeLogements from '../../Data/ListeLogements.json';
 import { useParams } from 'react-router-dom';
 import './GallerieLogement.scss';
-import Error from '../Error';
 
 const Gallery = () => {
   const { id } = useParams();
   const DataForId = ListeLogements.find(item => item.id === id);
-  const Images = DataForId.pictures;
+  
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   if (!DataForId) {
     return null;
   }
+  const Images = DataForId.pictures;
   const nextImage = () => {
     setCurrentImageIndex((nextIndex) => (nextIndex === Images.length - 1 ? 0 : nextIndex + 1));
   };
